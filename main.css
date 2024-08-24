@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #cccccc52;
+}
+
+header{
+    background-color: #3867D5;
+    padding: 16px;
+    color: #fff;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-style: italic;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-weight: bold;
+}
+
+header nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+#about .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    padding: 48px 0;
+}
+
+section h2 {
+    color: #3867D5;
+    font-style: italic;
+    border-bottom: 1px solid #3867D5;
+    padding-bottom: 16px; /*espaçamento entre h2 e borda inferior*/
+    margin-bottom: 48px; /*espaçamento entre h2 e p*/
+}
+
+#about img{
+    margin-right: 24px;
+}
+
+.lista-calcados{
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.lista-calcados img{
+    max-width: 100%;
+}
+
+.lista-calcados li {
+    margin-bottom: 48px;
+}
+
+.lista-calcados li h3 {
+    margin: 16px 0;
+}
+
+.lista-calcados p{
+    font-size: 13px;
+}
+
+.price {
+    margin: 16px 0;
+}
+button {
+    background-color: #3867D5;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+    .lista-calcados{
+        display: block;
+    }
+    .lista-calcados img{
+        width: 100%;
+    }
+    .lista-calcados p{
+        width: 100%;
+    }
+    #about img{
+        width: 100%;
+    }
+    #about p{
+        width: 100%;
+    }
+    #about .container{
+        display: block;
+    }
+    header{
+        padding: 16px 48px;
+    }
+    header nav li{
+        display: block;
+    }
+    section{
+        margin: 0 48px ;
+    }
+    section h2{
+        padding-top: 16px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .lista-calcados{
+        grid-template-columns: repeat(2, 49%);
+    }    
+    .lista-calcados img{
+        width: 100%;
+    }
+    .lista-calcados p{
+        width: 100%;
+    }
+    #about img{
+        width: 100%;
+    }
+    #about p{
+        width: 100%;
+    }
+    #about .container{
+        display: block;
+    }
+    header{
+        padding: 16px 48px;
+    }
+    section{
+        margin: 0 48px ;
+    }
+    section h2{
+        padding-top: 16px;
+    }    
+}
